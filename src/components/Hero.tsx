@@ -40,72 +40,72 @@ const Hero = ({ language, content }: HeroProps) => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto animate-fade-in">
+      <div className="relative z-10 text-center px-3 sm:px-4 max-w-6xl mx-auto animate-fade-in pt-20 sm:pt-24">
         {/* Main Title - Enhanced Poster Style */}
-        <div className="mb-8 border-8 border-poster-navy bg-poster-yellow/95 p-8 transform rotate-1 shadow-poster hover:shadow-poster-hover transition-all duration-300 backdrop-blur-sm">
-          <h1 className="font-poster text-4xl md:text-6xl lg:text-8xl font-black mb-4 text-poster-red transform -rotate-1 leading-none tracking-wider drop-shadow-lg">
+        <div className="mb-6 sm:mb-8 border-4 sm:border-8 border-poster-navy bg-poster-yellow/95 p-4 sm:p-6 md:p-8 transform rotate-1 shadow-poster hover:shadow-poster-hover transition-all duration-300 backdrop-blur-sm">
+          <h1 className="font-poster text-2xl sm:text-3xl md:text-6xl lg:text-8xl font-black mb-2 sm:mb-4 text-poster-red transform -rotate-1 leading-none tracking-wider drop-shadow-lg">
             NENES DEL PERREO
           </h1>
-          <div className="bg-poster-navy text-poster-yellow font-poster text-xl md:text-3xl py-2 px-4 mx-4 transform rotate-1 shadow-vintage">
+          <div className="bg-poster-navy text-poster-yellow font-poster text-sm sm:text-lg md:text-3xl py-1 sm:py-2 px-2 sm:px-4 mx-2 sm:mx-4 transform rotate-1 shadow-vintage">
             PRESENTAN
           </div>
         </div>
 
         {/* VS Section - Enhanced with depth */}
-        <div className="bg-poster-red/95 border-4 border-poster-navy p-6 mb-8 transform -rotate-1 shadow-vintage hover:shadow-red-glow transition-all duration-300 backdrop-blur-sm">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+        <div className="bg-poster-red/95 border-4 border-poster-navy p-3 sm:p-4 md:p-6 mb-6 sm:mb-8 transform -rotate-1 shadow-vintage hover:shadow-red-glow transition-all duration-300 backdrop-blur-sm">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8">
             {/* Sultan del Norte */}
             <div className="text-center flex-1 group">
-              <h2 className="font-poster text-3xl md:text-5xl text-poster-yellow mb-2 leading-none group-hover:animate-shake transition-all duration-300">
+              <h2 className="font-poster text-xl sm:text-2xl md:text-5xl text-poster-yellow mb-1 sm:mb-2 leading-none group-hover:animate-shake transition-all duration-300">
                 SULTÁN
               </h2>
-              <h2 className="font-poster text-2xl md:text-4xl text-poster-yellow mb-2 leading-none group-hover:animate-shake transition-all duration-300">
+              <h2 className="font-poster text-lg sm:text-xl md:text-4xl text-poster-yellow mb-1 sm:mb-2 leading-none group-hover:animate-shake transition-all duration-300">
                 DEL NORTE
               </h2>
-              <p className="text-poster-navy font-bold text-lg bg-poster-yellow/20 px-2 py-1 rounded">TAVO PÁEZ</p>
+              <p className="text-poster-navy font-bold text-sm sm:text-base md:text-lg bg-poster-yellow/20 px-2 py-1 rounded">TAVO PÁEZ</p>
             </div>
 
             {/* VS - Enhanced with hover effects */}
-            <div className="bg-poster-yellow text-poster-red font-poster text-4xl md:text-6xl px-6 py-3 transform rotate-12 border-4 border-poster-navy shadow-lg hover:shadow-glow hover:scale-110 transition-all duration-300 cursor-pointer">
+            <div className="bg-poster-yellow text-poster-red font-poster text-2xl sm:text-3xl md:text-6xl px-3 sm:px-4 md:px-6 py-2 sm:py-3 transform rotate-12 border-4 border-poster-navy shadow-lg hover:shadow-glow hover:scale-110 transition-all duration-300 cursor-pointer">
               VS
             </div>
 
             {/* El Rayo de Texas */}
             <div className="text-center flex-1 group">
-              <h2 className="font-poster text-3xl md:text-5xl text-poster-yellow mb-2 leading-none group-hover:animate-shake transition-all duration-300">
+              <h2 className="font-poster text-xl sm:text-2xl md:text-5xl text-poster-yellow mb-1 sm:mb-2 leading-none group-hover:animate-shake transition-all duration-300">
                 EL RAYO
               </h2>
-              <h2 className="font-poster text-2xl md:text-4xl text-poster-yellow mb-2 leading-none group-hover:animate-shake transition-all duration-300">
+              <h2 className="font-poster text-lg sm:text-xl md:text-4xl text-poster-yellow mb-1 sm:mb-2 leading-none group-hover:animate-shake transition-all duration-300">
                 DE TEXAS
               </h2>
-              <p className="text-poster-navy font-bold text-lg bg-poster-yellow/20 px-2 py-1 rounded">TAVO RAYO</p>
+              <p className="text-poster-navy font-bold text-sm sm:text-base md:text-lg bg-poster-yellow/20 px-2 py-1 rounded">TAVO RAYO</p>
             </div>
           </div>
         </div>
 
         {/* Tour Banner - Enhanced */}
-        <div className="bg-poster-navy/95 text-poster-yellow font-poster text-2xl md:text-4xl py-4 px-8 mb-8 border-4 border-poster-yellow transform rotate-1 shadow-vintage backdrop-blur-sm hover:shadow-glow transition-all duration-300">
+        <div className="bg-poster-navy/95 text-poster-yellow font-poster text-lg sm:text-xl md:text-4xl py-3 sm:py-4 px-4 sm:px-6 md:px-8 mb-6 sm:mb-8 border-4 border-poster-yellow transform rotate-1 shadow-vintage backdrop-blur-sm hover:shadow-glow transition-all duration-300">
           TOUR 2025
         </div>
 
         {/* CTA Buttons - Enhanced with ripple effects */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-slide-up px-2">
           <Button 
             size="lg" 
-            className="relative overflow-hidden bg-poster-red hover:bg-poster-red/80 border-4 border-poster-navy text-poster-yellow font-poster text-xl py-6 px-8 transform hover:scale-105 transition-all duration-300 shadow-poster hover:shadow-poster-hover group"
+            className="relative overflow-hidden bg-poster-red hover:bg-poster-red/80 border-4 border-poster-navy text-poster-yellow font-poster text-sm sm:text-lg md:text-xl py-4 sm:py-5 md:py-6 px-4 sm:px-6 md:px-8 transform hover:scale-105 transition-all duration-300 shadow-poster hover:shadow-poster-hover group w-full sm:w-auto min-h-[56px]"
           >
             <div className="absolute inset-0 bg-poster-yellow/20 opacity-0 group-hover:opacity-100 group-hover:animate-ripple"></div>
-            <Ticket className="w-6 h-6 mr-3 group-hover:animate-shake" />
+            <Ticket className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 group-hover:animate-shake" />
             {language === 'es' ? '¡CONSEGUIR BOLETOS!' : 'GET TICKETS!'}
           </Button>
           
           <Button 
             variant="outline" 
             size="lg"
-            className="relative overflow-hidden border-4 border-poster-yellow bg-poster-yellow/95 text-poster-navy hover:bg-poster-yellow/80 font-poster text-xl py-6 px-8 transform hover:scale-105 transition-all duration-300 shadow-poster hover:shadow-poster-hover group backdrop-blur-sm"
+            className="relative overflow-hidden border-4 border-poster-yellow bg-poster-yellow/95 text-poster-navy hover:bg-poster-yellow/80 font-poster text-sm sm:text-lg md:text-xl py-4 sm:py-5 md:py-6 px-4 sm:px-6 md:px-8 transform hover:scale-105 transition-all duration-300 shadow-poster hover:shadow-poster-hover group backdrop-blur-sm w-full sm:w-auto min-h-[56px]"
           >
             <div className="absolute inset-0 bg-poster-red/20 opacity-0 group-hover:opacity-100 group-hover:animate-ripple"></div>
-            <Play className="w-6 h-6 mr-3 group-hover:animate-shake" />
+            <Play className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 group-hover:animate-shake" />
             {language === 'es' ? '¡ESCUCHAR MÚSICA!' : 'LISTEN TO MUSIC!'}
           </Button>
         </div>
