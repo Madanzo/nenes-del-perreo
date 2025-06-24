@@ -89,41 +89,42 @@ const Index = () => {
               variant="ghost"
               size="sm"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden text-poster-yellow hover:bg-poster-yellow/20 border-2 border-poster-yellow"
+              className="md:hidden text-poster-yellow hover:bg-poster-yellow/20 border-2 border-poster-yellow p-2"
+              aria-label="Toggle mobile menu"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
             </Button>
           </div>
         </div>
         
         {/* Mobile Navigation Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-poster-navy/95 border-t-2 border-poster-yellow">
-            <div className="container mx-auto px-4 py-4 space-y-4">
+          <div className="md:hidden bg-poster-navy/95 border-t-2 border-poster-yellow backdrop-blur-sm">
+            <div className="container mx-auto px-4 py-6 space-y-2">
               <a 
                 href="#tour" 
-                className="block text-poster-yellow hover:text-poster-cream transition-colors font-bold text-lg py-2"
+                className="block text-poster-yellow hover:text-poster-cream hover:bg-poster-yellow/10 transition-all duration-200 font-bold text-xl py-4 px-4 rounded-lg border-2 border-transparent hover:border-poster-yellow/30"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {content[language].nav.tour}
               </a>
               <a 
                 href="#bio" 
-                className="block text-poster-yellow hover:text-poster-cream transition-colors font-bold text-lg py-2"
+                className="block text-poster-yellow hover:text-poster-cream hover:bg-poster-yellow/10 transition-all duration-200 font-bold text-xl py-4 px-4 rounded-lg border-2 border-transparent hover:border-poster-yellow/30"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {content[language].nav.bio}
               </a>
               <a 
                 href="#tickets" 
-                className="block text-poster-yellow hover:text-poster-cream transition-colors font-bold text-lg py-2"
+                className="block text-poster-yellow hover:text-poster-cream hover:bg-poster-yellow/10 transition-all duration-200 font-bold text-xl py-4 px-4 rounded-lg border-2 border-transparent hover:border-poster-yellow/30"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {content[language].nav.tickets}
               </a>
               <a 
                 href="#merch" 
-                className="block text-poster-yellow hover:text-poster-cream transition-colors font-bold text-lg py-2"
+                className="block text-poster-yellow hover:text-poster-cream hover:bg-poster-yellow/10 transition-all duration-200 font-bold text-xl py-4 px-4 rounded-lg border-2 border-transparent hover:border-poster-yellow/30"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {content[language].nav.merch}
